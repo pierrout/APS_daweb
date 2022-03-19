@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    
+    <title>Criar nova conta</title>
+    
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    
+  </head>
+  
+  <body>
+    <script src="script.js"></script>
+
+    <fieldset class="principal">
+    <div>
+      <h1 id="titulo">Criar nova conta</h1>
+      <h2 id= "subtitulo">Complete suas informações</h2>
+      <br>
+    </div>
+    </fieldset>
+
+    <form action="TelaLogin/telaLogin.html">
+      <fieldset class="grupo">
+
+        <div class="campo"> 
+          <label for="nome">INFORME SEU NOME</label>
+          <input type="text" name="nome" id="nome" method="get">
+          <br>
+        </div>
+
+        <div class="campo">
+          <label for="email">INFORME SEU EMAIL</label>
+          <input type="email" name="email" id="email" method="get">
+          <br>
+        </div>
+
+        <div class="campo">
+          <label for="senha">INFORME SUA SENHA</label>
+          <input type="password" name="senha" id="senha" method="get"> <!-- colocar campos como required -->
+          <br></br>
+        </div>
+          
+        <button class="botao" type="submit">Criar conta</button>
+        
+      </fieldset>
+    </form>
+
+      <br>
+
+      <!-- eu coloque o botão de login em outro fieldset
+      porque os campo de input são obrigatórios, mas
+      pro outro botao
+      Mas mesmo assim aparece o aviso de que tem que
+      tem que ser preenchido -->
+      
+      <form action="TelaLogin/telaLogin.html">
+      <fieldset class="login">
+        <h5>Já está cadastrado? 
+          <button class="botaoLogin">Fazer Login</button>
+        </h5>
+      </fieldset>
+      </form>
+  </body>
+  
+</html>

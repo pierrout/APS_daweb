@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    
+    <title>Fazer Login</title>
+    
+    <link href="telaLogin.css" rel="stylesheet" type="text/css" />
+    
+  </head>
+  
+  <body>
+    <script src="scriptLogin.js"></script>
+
+    <fieldset class="principalLogin">
+    <div>
+      <h1 id="tituloLogin">Login</h1>
+      <h2 id= "subtituloLogin">Entre para continuar</h2>
+      <br>
+    </div>
+    </fieldset>
+    
+    <form action="TelaEmpresas/telaEmpresas.html"> <!-- tive que colocar a pasta TelaEmpresas dentro da pasta TelaLogin -->
+      <fieldset class="grupoLogin">               <!--  pq a url ta indo TelaLogin/TelaEmpresas/telaEmpresas.html -->
+
+        <div class="campoLogin">
+          <label for="email">INFORME SEU EMAIL</label>
+          <input type="email" name="email" id="email" method="post">
+          <br>
+        </div>
+
+        <div class="campoLogin">
+          <label for="senha">INFORME SUA SENHA</label>
+          <input type="password" name="senha" id="senha" method="post"> <!-- colocar campos como required -->
+          <br></br>
+        </div>
+          
+        <button class="botaoLogin" type="submit">Entrar</button>
+        
+      </fieldset>
+    </form>
