@@ -8,7 +8,7 @@
     
     <title>Criar nova conta</title>
     
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="ArquivosCSS/style.css" rel="stylesheet" type="text/css" />
     
   </head>
   
@@ -23,24 +23,24 @@
     </div>
     </fieldset>
 
-    <form action="TelaLogin/telaLogin.html">
+    <form action="telaLogin.html">  <!-- aqui também precisa colocar metodo, mas ao colocar como "post" dá erro na execução e na URL -->
       <fieldset class="grupo">
 
         <div class="campo"> 
           <label for="nome">INFORME SEU NOME</label>
-          <input type="text" name="nome" id="nome" method="get">
+          <input type="text" name="nome" id="nome">
           <br>
         </div>
 
         <div class="campo">
           <label for="email">INFORME SEU EMAIL</label>
-          <input type="email" name="email" id="email" method="get">
+          <input type="email" name="email" id="email">
           <br>
         </div>
 
         <div class="campo">
           <label for="senha">INFORME SUA SENHA</label>
-          <input type="password" name="senha" id="senha" method="get"> <!-- colocar campos como required -->
+          <input type="password" name="senha" id="senha"> <!-- colocar campos como required -->
           <br></br>
         </div>
           
@@ -57,7 +57,7 @@
       Mas mesmo assim aparece o aviso de que tem que
       tem que ser preenchido -->
       
-      <form action="TelaLogin/telaLogin.html">
+      <form action="telaLogin.html">
       <fieldset class="login">
         <h5>Já está cadastrado? 
           <button class="botaoLogin">Fazer Login</button>

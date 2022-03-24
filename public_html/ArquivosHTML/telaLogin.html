@@ -8,37 +8,37 @@
     
     <title>Fazer Login</title>
     
-    <link href="telaLogin.css" rel="stylesheet" type="text/css" />
+    <link href="ArquivosCSS/style.css" rel="stylesheet" type="text/css" />
     
   </head>
   
   <body>
     <script src="scriptLogin.js"></script>
 
-    <fieldset class="principalLogin">
+    <fieldset class="principal">
     <div>
-      <h1 id="tituloLogin">Login</h1>
-      <h2 id= "subtituloLogin">Entre para continuar</h2>
+      <h1 id="titulo">Login</h1>
+      <h2 id= "subtitulo">Entre para continuar</h2>
       <br>
     </div>
     </fieldset>
     
-    <form action="TelaEmpresas/telaEmpresas.html"> <!-- tive que colocar a pasta TelaEmpresas dentro da pasta TelaLogin -->
-      <fieldset class="grupoLogin">               <!--  pq a url ta indo TelaLogin/TelaEmpresas/telaEmpresas.html -->
+    <form action="telaEmpresas.html"> <!-- aqui também precisa colocar metodo, mas ao colocar como "post" dá erro na execução e na URL -->
+      <fieldset class="grupo">
 
-        <div class="campoLogin">
+        <div class="campo">
           <label for="email">INFORME SEU EMAIL</label>
           <input type="email" name="email" id="email" method="post">
           <br>
         </div>
 
-        <div class="campoLogin">
+        <div class="campo">
           <label for="senha">INFORME SUA SENHA</label>
           <input type="password" name="senha" id="senha" method="post"> <!-- colocar campos como required -->
           <br></br>
         </div>
           
-        <button class="botaoLogin" type="submit">Entrar</button>
+        <button class="botao" type="submit">Entrar</button>
         
       </fieldset>
     </form>
