@@ -2,10 +2,11 @@
 <html lang="en">
     <head>
         <!-- link fica na tag head -->
-        <title>TODO supply a title</title>
+        <title>Empresas</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!-- Para usar referências do css do bootstrap -->
         <link 
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
             rel="stylesheet" 
@@ -13,14 +14,7 @@
             crossorigin="anonymous">
         
         <link 
-            rel="stylesheet" type="text/css" href="ArquivosCSS/style_telaEmpresas.css">
-        
-
-        <!-- 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" 
-              integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
-              crossorigin="anonymous"> -->
-    
+            rel="stylesheet" type="text/css" href="ArquivosCSS/style_telaEmpresas.css">  
     </head>
     
     <body>   
@@ -29,19 +23,23 @@
         <header class="bg-light">
             <div class="collapse" id="navbarToggleExternalContent">
                 <div class="bg-light p-4">
+                    
+                    <!-- Texto dentro do navbar -->
                   <h5 class="text-black h4">Objetivo</h5>
-                  <span class="text-muted">Toggleable via the navbar brand.</span>
+                  <span class="text-muted">A área de tecnologia visa  ter muitas
+                  oportunidades, mas será que todas são boas? <br>
+                  Esse é um projeto de indicaçao de empresas voltado para desenvolvedores.<br>
+                  Trabalhe em um lugar que acredite no seu potencial e invista em você!</span>
                 </div>
             </div>
-            <nav id="navbar-exemplo2" class="navbar navbar-light bg-light ">
+            <nav id="navbar" class="navbar navbar-light bg-light ">
               <div class="container-fluid">
                   
-                 
-                  
+                <!-- Botão do navbar -->
                 <button 
                     class="navbar-toggler" 
                     type="button" 
-                    data-bs-toggle="collapse" 
+                    data-bs-toggle="collapse"
                     data-bs-target="#navbarToggleExternalContent" 
                     aria-controls="navbarToggleExternalContent" 
                     aria-expanded="false" 
@@ -49,7 +47,8 @@
                   <span class="navbar-toggler-icon"></span>
                 </button>
                   
-                  
+                <!-- Os nomes das empresas dentro do navbar para
+                direcionar o usuário até a parte que o mais interessa-->
                   <ul class="nav nav-pills"> 
                       <li class="nav-item">
                         <a class="nav-link"  href="#Hotmart">Hotmart</a>
@@ -60,23 +59,20 @@
                   </ul>
                   
               </div>
-            </nav>
-            
-            
-            
+            </nav>      
         </header>
-        
-       
-       
+
         <div class="row" >
-          <div data-spy="scroll" data-target="#navbar-exemplo2" data-offset="0">
+          <div data-spy="scroll" data-target="#navbar" data-offset="0">
             <div>
                 <h1 id="Hotmart"  align="center">Hotmart - Empresa de Marketing</h1>
             </div>
            </div>
             
+        <!-- sistema de grid do Bootstrap 
+        6 colunas pequenas para essa div-->      
         <div class="col-sm-6">
-            <!--tracinhos-->
+            <!--tracinhos debaixo da imagem-->
            <div id="carouselDarkHotmart" class="carousel carousel-dark slide" 
                 data-bs-ride="carousel">
 
@@ -88,7 +84,7 @@
                <div class="carousel-inner">
 
                  <div class="carousel-item active" >
-                     <!-- img-fluid é o que deixa responsivo d-block w-75-->
+                     <!-- img-fluid é o que deixa mais responsivo -->
                    <img src="imagens/espaço.jpg" class="img-fluid" >
                  </div>
                  <div class="carousel-item">
@@ -98,6 +94,7 @@
                    <img src="imagens/local_principal.jpg" class="img-fluid"  >
                  </div>
                </div>
+               <!-- Botão de seta, no lado esquerdo e direito das imagens -->
                <button class="carousel-control-prev" type="button" data-bs-target="#carouselDarkHotmart" data-bs-slide="prev">
                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                  <span class="visually-hidden">Previous</span>
@@ -109,7 +106,10 @@
            </div>
 
        </div>
-            
+         
+        <!-- Essa div vai ocupar 4 colunas.
+        Divisão das informações para que pudessem ficar
+        lado a lado-->
         <div class="col-sm-4" >
             <!-- container ainda corta-->
           <iframe class="img-fluid"
@@ -121,20 +121,18 @@
             <section class="Motivos">
                 <b>Por que trabalhar nessa empresa?</b>
                 <ul>
-                    <li>la</li>
-                    <li>le</li>
+                    <li>A metodologia entre os integrantes das equipes (Troopers) são de desenvolvimento pessoal
+                        e trabalho, pois a empresa concilia os resultados com o processo que humaniza os Troopers.</li>
+                    <li>Acreditam nos pilares “Autonomia, Liberdade e Love”.</li>
+                    <li>90% dos Troopers acreditam ser um ótimo lugar para se trabalhar. Ganharam o prêmio Great Place To Work.</li>
                 </ul>
             </section>
         </div>
         
-        <br><!-- comment -->
         <br>
- 
-      <!--  <hr class="hr3">-->
-        
-        <br>
-        
-         <div data-spy="scroll" data-target="#navbar-exemplo2" data-offset="0">
+  
+        <!-- A parte do oracle -->
+         <div data-spy="scroll" data-target="#navbar" data-offset="0">
             <div>
                 <h1 id="Oracle"  align="center">Oracle do Brasil Sistemas</h1>
             </div>
@@ -153,7 +151,7 @@
                         <div class="carousel-inner">
 
                           <div class="carousel-item active" >
-                              <!-- img-fluid é o que deixa responsivo d-block w-75-->
+
                             <img src="imagens/oracle1.webp" class="img-fluid" >
                           </div>
                           <div class="carousel-item">
@@ -188,26 +186,22 @@
                 <section class="Motivos ">
                     <b>Por que trabalhar nessa empresa?</b>
                     <ul>
-                        <li>la</li>
-                        <li>le</li>
+                        <li>Empresa vencedora do prêmio Grace Place To Work e em 2020 
+                            ganhadora do prêmio da Glassdoor que aponta ser um ótimo lugar para trabalhar. </li>
+                        <li>Há feedbacks para os funcionários, investem em cursos e treinamentos internos. </li>
+                        <li>Ambiente de trabalho dinâmico e flexível. </li>
                     </ul>
                 </section>
             </div>
             
        </div> 
-        
-        
-        
-        
-       
+
         <!-- deve ficar no final, referencia de js -->
         <script 
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
             crossorigin="anonymous">                 
         </script>
-        
-        
-        
+    
     </body>
 </html>
